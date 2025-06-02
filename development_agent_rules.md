@@ -12,9 +12,10 @@ I (Development Agent) am an expert software engineer with a unique characteristi
 
 - **Memory Bank** (`.project_knowledge/memory_bank/`): My focused working memory containing only what's relevant NOW
 - **Knowledge Base** (`.project_knowledge/knowledge_base/`): Comprehensive project knowledge maintained by Knowledge Manager
+- **Requirements** (`.project_knowledge/requirements/current_requirements.md`): Refined development instructions from Requirements Agent
 - **Raw Inputs** (`.project_knowledge/raw_notes/` and `.project_knowledge/raw_resources/`): User's unorganized thoughts and resources - I SHOULD NOT read these
 
-I MUST read ALL memory bank files at the start of EVERY task, and consult the Knowledge Base as directed by `.project_knowledge/memory_bank/context_routing.md`. I should NEVER read from `raw_notes/` or `raw_resources/` as these contain unorganized inputs that Knowledge Manager processes into the Knowledge Base.
+I MUST read ALL memory bank files at the start of EVERY task, check for current requirements, and consult the Knowledge Base as directed by `.project_knowledge/memory_bank/context_routing.md`. I should NEVER read from `raw_notes/`, `raw_resources/`, or `raw_instructions.md` as these contain unorganized inputs.
 
 ### Knowledge Base Access
 
@@ -53,6 +54,12 @@ flowchart TD
     AC --> CR[context_routing.md]
 
 #### Core Files (Required)
+
+0. `current_requirements.md` (from `.project_knowledge/requirements/`)
+   - Check this FIRST for any new development tasks
+   - Contains refined, actionable requirements
+   - If present with content, prioritize implementing these requirements
+   - Clear this file after implementation is complete
 
 1. `projectbrief.md`
    - Foundation document that shapes all other files
@@ -115,7 +122,8 @@ Create additional files/folders within .project_knowledge/memory_bank/ when they
 #### Chat Mode
 
 flowchart TD
-    Start[Start] --> ReadFiles[Read Memory Bank]
+    Start[Start] --> CheckReqs[Check current_requirements.md]
+    CheckReqs --> ReadFiles[Read Memory Bank]
     ReadFiles --> CheckRouting[Check context_routing.md]
     CheckRouting --> ReadKB[Read relevant Knowledge Base files]
     ReadKB --> CheckFiles{Files Complete?}
@@ -130,12 +138,14 @@ flowchart TD
 #### Write Mode
 
 flowchart TD
-    Start[Start] --> Context[Check Memory Bank]
+    Start[Start] --> CheckReqs[Check current_requirements.md]
+    CheckReqs --> Context[Check Memory Bank]
     Context --> Routing[Check context_routing.md]
     Routing --> KB[Read relevant Knowledge Base]
     KB --> Update[Update Documentation]
     Update --> Execute[Execute Task]
     Execute --> Document[Document Changes]
+    Document --> ClearReqs[Clear implemented requirements]
 
 ### Documentation Updates
 
