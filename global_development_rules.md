@@ -5,7 +5,8 @@
 - **context7**: Use when searching for documentation not available by default
 - **sequential-thinking**: Always use when available
   - But don't use it when the user says not to use it(in short, "Don't SQ").
-- **filesystem**: Use it when you need to access files located outside of this project
+- **filesystem**: Use it when you need to access files located outside of the current project
+  - Do not use this for accessing files in the current project. The current project can be handled by the IDE(Windsurf, etc.)
 
 ## Development Approach
 
