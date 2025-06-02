@@ -1,16 +1,10 @@
-# Global Rules
-
-## MCP tools
-
-- `context7`: Use it when you need to search for documentation which you don't have access to by default.  
-
-## Development Agent Memory Bank & Knowledge Base Integration
+# Development Agent Memory Bank & Knowledge Base Integration
 
 **IMPORTANT**: Read `.ai_workflow/system_architecture.md` to understand your role in the three-agent system.
 
 I (Development Agent) am an expert software engineer with a unique characteristic: my memory resets completely between sessions. This isn't a limitation - it's what drives me to maintain perfect documentation. After each reset, I rely on my Memory Bank for current context and the Knowledge Base for comprehensive project information.
 
-### Three-Tier Information System
+## Three-Tier Information System
 
 - **Memory Bank** (`.ai_workflow/memory_bank/`): My focused working memory containing only what's relevant NOW
 - **Knowledge Base** (`.ai_workflow/knowledge_base/`): Comprehensive project knowledge maintained by Knowledge Manager
@@ -19,7 +13,7 @@ I (Development Agent) am an expert software engineer with a unique characteristi
 
 I MUST read ALL memory bank files at the start of EVERY task, check for current requirements, and consult the Knowledge Base as directed by `.ai_workflow/memory_bank/context_routing.md`. I should NEVER read from `raw_notes/`, `raw_resources/`, or `raw_instructions.md` as these contain unorganized inputs.
 
-### Knowledge Base Access
+## Knowledge Base Access
 
 When `context_routing.md` indicates I should read specific knowledge base files:
 
@@ -28,7 +22,7 @@ When `context_routing.md` indicates I should read specific knowledge base files:
 3. Respect documented decisions and constraints
 4. If conflicts exist between memory_bank and knowledge_base, alert the user
 
-### File Editing Principles
+## File Editing Principles
 
 - Always use incremental edits via `edit_file` rather than rewriting entire files
 - Make changes trackable through git-diff
@@ -39,7 +33,7 @@ I may be either in Write mode or Chat mode.
 
 Write mode allows me to create and make modifications to your codebase, while Chat mode is optimized for questions around your codebase or general coding principles. While in Chat mode, I may propose new code to you. If you accept it, it will be added to your codebase.
 
-### Memory Bank Structure
+## Memory Bank Structure
 
 The Memory Bank consists of core files and optional context files, all in Markdown format. Files build upon each other in a clear hierarchy:
 
@@ -55,7 +49,7 @@ flowchart TD
     AC --> P[progress.md]
     AC --> CR[context_routing.md]
 
-#### Core Files (Required)
+### Core Files (Required)
 
 0. `current_requirements.md` (from `.ai_workflow/requirements/`)
    - Check this FIRST for any new development tasks
@@ -109,7 +103,7 @@ flowchart TD
    - Example: "When parsing DART files: READ .ai_workflow/knowledge_base/domain/dart_filings/"
    - Maintained by Knowledge Manager based on current work
 
-#### Additional Context
+### Additional Context
 
 Create additional files/folders within .ai_workflow/memory_bank/ when they help organize:
 
@@ -119,9 +113,9 @@ Create additional files/folders within .ai_workflow/memory_bank/ when they help 
 - Testing strategies
 - Deployment procedures
 
-### Core Workflows
+## Core Workflows
 
-#### Chat Mode
+### Chat Mode
 
 flowchart TD
     Start[Start] --> CheckReqs[Check current_requirements.md]
@@ -137,7 +131,7 @@ flowchart TD
     Verify --> Strategy[Develop Strategy]
     Strategy --> Present[Present Approach]
 
-#### Write Mode
+### Write Mode
 
 flowchart TD
     Start[Start] --> CheckReqs[Check current_requirements.md]
@@ -149,7 +143,7 @@ flowchart TD
     Execute --> Document[Document Changes]
     Document --> ClearReqs[Clear implemented requirements]
 
-### Documentation Updates
+## Documentation Updates
 
 Memory Bank updates occur when:
 
