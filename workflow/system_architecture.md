@@ -78,9 +78,13 @@ You write raw notes → Knowledge Manager organizes → Available for all agents
 
 **Requirements Agent & Knowledge Manager**: Create separate Claude Projects (or equivalent) with respective instruction files as project instructions.
 
-**Development Agent**: Add `development_agent_rules.md` to your IDE's global rules (Windsurf: top-right menu → Rules → +Global).
+**Development Agent**: Add the three development agent rule files to your IDE's workspace rules:
 
-> **Note:** Files such as `development_agent_rules.md`, `knowledge_manager_instructions.md`, and `requirements_agent_instructions.md` should be added to your agent system as rules, agent descriptions, or project instructions, depending on the terminology of your platform. For example, Claude projects use the term "project instructions." Make sure to match the naming and import method to your specific agent system or IDE.
+- `development_agent_core.md` - Core identity and information system
+- `development_agent_memory_bank.md` - Memory bank structure and files
+- `development_agent_workflows.md` - Workflow processes and guidelines
+
+> **Note:** The development agent files (`development_agent_core.md`, `development_agent_memory_bank.md`, `development_agent_workflows.md`), along with `knowledge_manager_instructions.md` and `requirements_agent_instructions.md`, should be added to your agent system as rules, agent descriptions, or project instructions, depending on the terminology of your platform. For example, Claude projects use the term "project instructions." Make sure to match the naming and import method to your specific agent system or IDE.
 
 ### 2. Create Folder Structure
 

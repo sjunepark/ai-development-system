@@ -8,8 +8,9 @@ This repository contains AI development resources, workflows, and global rules f
 llm-ide-dev/
 ├── workflow/                    # Three-agent workflow methodology
 │   ├── system_architecture.md   # Complete system design
-│   ├── development_agent_rules.md
-│   ├── development_agent_workspace_rules.md  # For project .windsurf/rules/
+│   ├── development_agent_core.md           # Core identity and information system
+│   ├── development_agent_memory_bank.md    # Memory bank structure and files
+│   ├── development_agent_workflows.md      # Workflow processes and guidelines
 │   ├── knowledge_manager_instructions.md
 │   └── requirements_agent_instructions.md
 └── global_development_rules.md  # Universal coding rules (separate from workflow)
