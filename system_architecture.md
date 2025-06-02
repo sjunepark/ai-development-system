@@ -80,6 +80,8 @@ You write raw notes → Knowledge Manager organizes → Available for all agents
 
 **Development Agent**: Add `development_agent_rules.md` to your IDE's global rules (Windsurf: top-right menu → Rules → +Global).
 
+> **Note:** Files such as `development_agent_rules.md`, `knowledge_manager_instructions.md`, and `requirements_agent_instructions.md` should be added to your agent system as rules, agent descriptions, or project instructions, depending on the terminology of your platform. For example, Claude projects use the term "project instructions." Make sure to match the naming and import method to your specific agent system or IDE.
+
 ### 2. Create Folder Structure
 
 ```bash
