@@ -1,8 +1,8 @@
 ---
-trigger: always_on
+trigger: manual
 ---
 
-# Development Agent Workflows
+# Coding agent Workflows
 
 ## Core Workflows
 
@@ -10,8 +10,8 @@ trigger: always_on
 
 ```mermaid
 flowchart TD
-    Start[Start] --> CheckReqs[Check current_requirements.md]
-    CheckReqs --> ReadFiles[Read Memory Bank]
+    Start[Start] --> CheckReqs[Check refined_requirements.md]
+    CheckReqs --> ReadFiles[Read memory bank]
     ReadFiles --> CheckRouting[Check context_routing.md]
     CheckRouting --> ReadKB[Read relevant Knowledge Base files]
     ReadKB --> CheckFiles{Files Complete?}
@@ -28,8 +28,8 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Start[Start] --> CheckReqs[Check current_requirements.md]
-    CheckReqs --> Context[Check Memory Bank]
+    Start[Start] --> CheckReqs[Check refined_requirements.md]
+    CheckReqs --> Context[Check memory bank]
     Context --> Routing[Check context_routing.md]
     Routing --> KB[Read relevant Knowledge Base]
     KB --> Update[Update Documentation]
@@ -40,7 +40,7 @@ flowchart TD
 
 ## Update Process
 
-When updating Memory Bank documentation:
+When updating memory bank documentation:
 
 ```mermaid
 flowchart TD
@@ -62,14 +62,14 @@ flowchart TD
 
 ### Starting a New Task
 
-1. **Always check `current_requirements.md` FIRST**
+1. **Always check `refined_requirements.md` FIRST**
    - This contains refined requirements from the Requirements Agent
    - If it has content, this is your primary task
    - Clear it after implementation
 
-2. **Read ALL Memory Bank files**
-   - Start with `projectbrief.md` for foundation
-   - Review `activeContext.md` for current state
+2. **Read ALL memory bank files**
+   - Start with `project_brief.md` for foundation
+   - Review `active_context.md` for current state
    - Check `progress.md` for what's completed
 
 3. **Consult `context_routing.md`**
@@ -83,11 +83,11 @@ flowchart TD
    - Commit logical chunks of work
 
 2. **Update documentation as you work**
-   - Document significant decisions in `activeContext.md`
+   - Document significant decisions in `active_context.md`
    - Update `progress.md` when features are complete
 
 3. **When encountering new patterns**
-   - Document in Memory Bank
+   - Document in memory bank
    - Suggest Knowledge Base updates to user
 
 ### Completing Tasks
@@ -96,21 +96,21 @@ flowchart TD
    - Mark completed features
    - Note any new issues discovered
 
-2. **Clear `current_requirements.md`**
+2. **Clear `refined_requirements.md`**
    - Remove implemented requirements
    - Note any partial implementations
 
-3. **Update `activeContext.md`**
+3. **Update `active_context.md`**
    - Document what was done
    - Note next logical steps
 
-### Special: "Update Memory Bank" Command
+### Special: "Update memory bank" Command
 
 When user explicitly says **"update memory bank"**:
 
-1. **Review EVERY Memory Bank file**
+1. **Review EVERY memory bank file**
    - Even if some don't need updates
-   - Focus on `activeContext.md` and `progress.md`
+   - Focus on `active_context.md` and `progress.md`
 
 2. **Document current project state**
    - Recent changes
