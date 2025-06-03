@@ -71,8 +71,7 @@ You write raw notes → Knowledge Manager organizes → Available for all agents
 │   ├── active_context.md
 │   ├── system_patterns.md
 │   ├── tech_context.md
-│   ├── progress.md
-│   └── context_routing.md
+│   └── progress.md
 ├── requirements/
 │   ├── raw_requirements.md      # Your rough development instructions/requirements
 │   └── refined_requirements.md  # Requirements Agent's refined output

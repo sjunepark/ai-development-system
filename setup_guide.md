@@ -13,7 +13,7 @@ This guide helps you integrate the three-agent AI workflow into your project.
 
 ```bash
 # In your project root
-mkdir -p .ai_dev/{requirements,raw_notes,raw_resources,memory_bank}
+mkdir -p .ai_dev/requirements .ai_dev/memory_bank .ai_dev/raw_knowledge/{raw_notes,raw_resources}
 mkdir -p .ai_dev/knowledge_base/{technical,domain,decisions,patterns}
 ```
 
@@ -29,9 +29,13 @@ cp system_architecture.md YOUR_PROJECT/.ai_dev/
 Create empty files:
 
 - `.ai_dev/memory_bank/project_brief.md`
-- `.ai_dev/requirements/raw_instructions.md`
+- `.ai_dev/memory_bank/product_context.md`
+- `.ai_dev/memory_bank/active_context.md`
+- `.ai_dev/memory_bank/system_patterns.md`
+- `.ai_dev/memory_bank/tech_context.md`
+- `.ai_dev/memory_bank/progress.md`
+- `.ai_dev/requirements/raw_requirements.md`
 - `.ai_dev/requirements/refined_requirements.md`
-- `.ai_dev/memory_bank/context_routing.md`
 - `.ai_dev/knowledge_base/index.md`
 
 ### 4. Configure Agents
