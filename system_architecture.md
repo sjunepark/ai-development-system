@@ -78,12 +78,13 @@ You write raw notes → Knowledge agent organizes → Available for all agents
 ├── raw_knowledge/ 
 │   ├── raw_notes/               # Your knowledge scratchpad, which are to be refined
 │   └── raw_resources/           # PDFs, docs, external resources
-└── knowledge_base/              # Organized project knowledge
-    ├── index.md                 # Knowledge base index, which is going to be used by the Coding agent to find relevant knowledge
-    ├── technical/               # Libraries, tools, patterns
-    ├── domain/                  # Business logic, requirements
-    ├── decisions/               # Architectural decisions, rationale
-    └── patterns/                # Reusable solutions
+├── knowledge_base/              # Organized project knowledge
+│   ├── index.md                 # Knowledge base index, which is going to be used by the Coding agent to find relevant knowledge
+│   ├── technical/               # Libraries, tools, patterns
+│   ├── domain/                  # Business logic, requirements
+│   ├── decisions/               # Architectural decisions, rationale
+│   └── patterns/                # Reusable solutions
+└── system_architecture.md
 ```
 
 ## Inter-Agent Communication
