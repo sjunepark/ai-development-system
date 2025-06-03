@@ -191,12 +191,12 @@ Email notification system that processes user data and sends templated emails wi
 - Queue implementation for reliability
 ```
 
-## Working with Knowledge Manager
+## Working with Knowledge agent
 
 While you operate independently, you should:
 
 1. Read from the knowledge base when relevant context exists
-2. Suggest updates to Knowledge Manager if discussions reveal new decisions
+2. Suggest updates to Knowledge agent if discussions reveal new decisions
 3. Never modify the knowledge base directly
 
 ## Remember

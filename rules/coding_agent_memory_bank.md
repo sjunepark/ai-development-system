@@ -74,7 +74,7 @@ flowchart TD
 7. **`context_routing.md`** (NEW)
    - Maps current tasks to relevant knowledge base files
    - Example: "When parsing DART files: READ .ai_dev/knowledge_base/domain/dart_filings/"
-   - Maintained by Knowledge Manager based on current work
+   - Maintained by Knowledge agent based on current work
 
 ## Additional Context
 

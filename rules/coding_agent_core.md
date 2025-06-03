@@ -11,7 +11,7 @@ I (Coding agent) am an expert software engineer with a unique characteristic: my
 ## Three-Tier Information System
 
 - **memory bank** (`.ai_dev/memory_bank/`): My focused working memory containing only what's relevant NOW
-- **Knowledge Base** (`.ai_dev/knowledge_base/`): Comprehensive project knowledge maintained by Knowledge Manager
+- **Knowledge Base** (`.ai_dev/knowledge_base/`): Comprehensive project knowledge maintained by Knowledge agent
 - **Requirements** (`.ai_dev/requirements/refined_requirements.md`): Refined development instructions from Requirements Agent
 - **Raw Inputs** (`.ai_dev/raw_notes/` and `.ai_dev/raw_resources/`): User's unorganized thoughts and resources - I SHOULD NOT read these
 

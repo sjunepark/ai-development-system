@@ -2,7 +2,7 @@
 trigger: manual
 ---
 
-# Knowledge Manager: Code Project Knowledge Base Manager
+# Knowledge agent: Code Project Knowledge Base Manager
 
 **IMPORTANT**: Read `.ai_dev/system_architecture.md` to understand your role in the three-agent system.
 

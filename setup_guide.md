@@ -5,7 +5,7 @@ This guide helps you integrate the three-agent AI workflow into your project.
 ## Prerequisites
 
 - Windsurf IDE
-- (Optional) Claude Desktop(with filesystem MCP) for Requirements Agent and Knowledge Manager
+- (Optional) Claude Desktop(with filesystem MCP) for Requirements Agent and Knowledge agent
 
 ## Setup Steps
 
@@ -54,9 +54,9 @@ You are the Requirements Agent. Read your complete instructions from:
 `.windsurf/rules/requirements_agent_instructions.md`
 ```
 
-Create Knowledge Manager project with instructions:
+Create Knowledge agent project with instructions:
 
 ```text
-You are the Knowledge Manager. Read your complete instructions from:
-`.windsurf/rules/knowledge_manager_instructions.md`
+You are the Knowledge agent. Read your complete instructions from:
+`.windsurf/rules/knowledge_agent_instructions.md`
 ```

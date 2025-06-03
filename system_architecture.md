@@ -10,7 +10,7 @@ In addition, the processes below will also be powered by agents:
 - Requirements/instructions refinement, so that the coding agent effectively understand the user's requirements
 
 1. **Requirements Agent**: Refines raw instructions into clear specifications
-2. **Knowledge Manager**: Organizes and maintains project knowledge
+2. **Knowledge agent**: Organizes and maintains project knowledge
 3. **Coding agent**: Implements code based on requirements and knowledge
 
 ## Agent Roles and Boundaries
@@ -25,7 +25,7 @@ In addition, the processes below will also be powered by agents:
   - `.ai_dev/requirements/refined_requirements.md`
 - **Boundaries**: Clarifies WHAT and WHY, never HOW to implement
 
-### Knowledge Manager  
+### Knowledge agent  
 
 - **Purpose**: Transform raw notes into organized, accessible knowledge
 - **Reads**:
@@ -58,7 +58,7 @@ You write raw instructions → Requirements Agent refines → Coding agent imple
 ### Pattern B: Knowledge Capture  
 
 ```text
-You write raw notes → Knowledge Manager organizes → Available for all agents
+You write raw notes → Knowledge agent organizes → Available for all agents
 ```
 
 ## Directory Structure
