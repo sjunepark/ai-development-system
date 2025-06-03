@@ -1,5 +1,6 @@
 ---
-trigger: manual
+trigger: model_decision
+description: Any time when a coding agent is mentioned.
 ---
 
 # Coding agent memory bank Structure

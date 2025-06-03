@@ -1,5 +1,5 @@
 ---
 trigger: model_decision
-description: When a knowledge 
+description: Any time when a knowledge agent is mentioned.
 ---
 

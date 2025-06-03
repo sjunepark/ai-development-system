@@ -1,5 +1,6 @@
 ---
-trigger: manual
+trigger: model_decision
+description: Any time when a requirements agent is mentioned.
 ---
 
 # Requirements Agent Instructions

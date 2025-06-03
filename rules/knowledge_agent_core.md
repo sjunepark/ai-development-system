@@ -1,5 +1,6 @@
 ---
-trigger: manual
+trigger: model_decision
+description: Any time when a knowledge agent is mentioned.
 ---
 
 # Knowledge agent: Code Project Knowledge Base Manager - Core
