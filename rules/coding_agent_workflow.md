@@ -13,8 +13,8 @@ description: Any time when a coding agent is mentioned.
 flowchart TD
     Start[Start] --> CheckReqs[Check refined_requirements.md]
     CheckReqs --> ReadFiles[Read memory bank]
-    ReadFiles --> CheckRouting[Check context_routing.md]
-    CheckRouting --> ReadKB[Read relevant Knowledge Base files]
+    ReadFiles --> CheckKBIndex[Check knowledge_base/index.md]
+    CheckKBIndex --> ReadKB[Read relevant Knowledge Base files]
     ReadKB --> CheckFiles{Files Complete?}
 
     CheckFiles -->|No| Plan[Create Plan]
@@ -31,8 +31,8 @@ flowchart TD
 flowchart TD
     Start[Start] --> CheckReqs[Check refined_requirements.md]
     CheckReqs --> Context[Check memory bank]
-    Context --> Routing[Check context_routing.md]
-    Routing --> KB[Read relevant Knowledge Base]
+    Context --> KBIndex[Check knowledge_base/index.md]
+    KBIndex --> KB[Read relevant Knowledge Base]
     KB --> Update[Update Documentation]
     Update --> Execute[Execute Task]
     Execute --> Document[Document Changes]
@@ -73,9 +73,9 @@ flowchart TD
    - Review `active_context.md` for current state
    - Check `progress.md` for what's completed
 
-3. **Consult `context_routing.md`**
-   - This guides you to relevant Knowledge Base files
-   - Read indicated files before starting work
+3. **Consult `knowledge_base/index.md`**
+   - This index, maintained by the Knowledge Agent, guides you to relevant Knowledge Base files and sections.
+   - Read indicated files/sections before starting work
 
 ### During Development
 

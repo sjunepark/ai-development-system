@@ -20,7 +20,6 @@ flowchart TD
     TC --> AC
 
     AC --> P[progress.md]
-    AC --> CR[context_routing.md]
 ```
 
 ## Core Files (Required)
@@ -71,11 +70,6 @@ flowchart TD
    - Current status
    - Known issues
    - Evolution of project decisions
-
-7. **`context_routing.md`** (NEW)
-   - Maps current tasks to relevant knowledge base files
-   - Example: "When parsing DART files: READ .ai_dev/knowledge_base/domain/dart_filings/"
-   - Maintained by Knowledge agent based on current work
 
 ## Additional Context
 
